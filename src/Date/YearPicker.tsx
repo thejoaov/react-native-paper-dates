@@ -20,7 +20,10 @@ export default function YearPicker({
 }) {
   const theme = useTheme()
   const flatList = React.useRef<FlatList<number> | null>(null)
-  const years = range(isNaN(startYear) ? 1800 : startYear, isNaN(endYear) ? 2200 : endYear)
+  const years = range(
+    isNaN(startYear) ? 1800 : startYear,
+    isNaN(endYear) ? 2200 : endYear
+  )
 
   // scroll to selected year
   React.useEffect(() => {
@@ -31,7 +34,7 @@ export default function YearPicker({
         animated: false,
       })
     }
-  }, [flatList, selectedYear])
+  }, [flatList, selectedYear, startYear])
 
   return (
     <View
