@@ -92,7 +92,7 @@ function SwitchButton({
           selectable={false}
           style={[
             {
-              ...theme.fonts.medium,
+              ...theme.fonts.default,
               color: color,
             },
           ]}

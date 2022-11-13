@@ -278,7 +278,7 @@ function Month(props: MonthSingleProps | MonthRangeProps | MonthMultiProps) {
             ]}
           >
             <Text
-              style={[styles.monthLabel, theme.fonts.medium]}
+              style={[styles.monthLabel, theme.fonts.default]}
               selectable={false}
             >
               {monthName} {year}

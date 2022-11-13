@@ -6,6 +6,7 @@ import DatePickerModal from './DatePickerModal'
 import { useLatest } from '../utils'
 import type { DatePickerInputProps } from './DatePickerInput.shared'
 import DatePickerInputWithoutModal from './DatePickerInputWithoutModal'
+import { getTranslation } from '../translations/utils'
 
 function DatePickerInput(
   {
@@ -27,6 +28,7 @@ function DatePickerInput(
     },
     [setVisible, onChangeRef]
   )
+  const saveLabel = rest.saveLabel || getTranslation(rest.locale, 'save')
 
   return (
     <DatePickerInputWithoutModal
@@ -53,6 +55,7 @@ function DatePickerInput(
             locale={locale}
             dateMode={inputMode}
             validRange={validRange}
+            saveLabel={saveLabel}
           />
         ) : null
       }

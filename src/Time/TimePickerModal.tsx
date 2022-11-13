@@ -139,7 +139,7 @@ export function TimePickerModal({
               ]}
             >
               <View style={styles.labelContainer}>
-                <Text style={[styles.label, { color: theme.colors.text }]}>
+                <Text style={[styles.label, { color: theme.colors.scrim }]}>
                   {uppercase ? label.toUpperCase() : label}
                 </Text>
               </View>

@@ -152,6 +152,7 @@ export function DatePickerModalContent(
         />
         <DatePickerModalContentHeader
           state={state}
+          saveLabel={props.saveLabel}
           mode={mode}
           collapsed={collapsed}
           onToggle={onToggleCollapse}

@@ -102,9 +102,9 @@ function TimeInputs({
       />
       <View style={styles.hoursAndMinutesSeparator}>
         <View style={styles.spaceDot} />
-        <View style={[styles.dot, { backgroundColor: theme.colors.text }]} />
+        <View style={[styles.dot, { backgroundColor: theme.colors.scrim }]} />
         <View style={styles.betweenDot} />
-        <View style={[styles.dot, { backgroundColor: theme.colors.text }]} />
+        <View style={[styles.dot, { backgroundColor: theme.colors.scrim }]} />
         <View style={styles.spaceDot} />
       </View>
       <TimeInput

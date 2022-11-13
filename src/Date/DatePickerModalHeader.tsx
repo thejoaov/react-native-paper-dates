@@ -14,12 +14,13 @@ export interface DatePickerModalHeaderProps {
   onSave: () => void
   locale: string | undefined
   closeIcon?: string
+  title?: string
 }
 
 export default function DatePickerModalHeader(
   props: DatePickerModalHeaderProps
 ) {
-  const { disableSafeTop, locale, closeIcon = 'close' } = props
+  const { disableSafeTop, locale, closeIcon = 'close', title } = props
   const saveLabel = props.saveLabel || getTranslation(locale, 'save')
   const color = useHeaderTextColor()
   return (
@@ -39,11 +40,12 @@ export default function DatePickerModalHeader(
               color={color}
               testID="react-native-paper-dates-close"
             />
-            <Appbar.Content title={''} />
+            <Appbar.Content title={title} />
             <Button
-              color={color}
+              // color={color}
               onPress={props.onSave}
-              disabled={props.saveLabelDisabled || false}
+              // disabled={props.saveLabelDisabled || false}
+              mode="contained-tonal"
               uppercase={props.uppercase || true}
               testID="react-native-paper-dates-save"
             >

@@ -176,7 +176,7 @@ export function useSwitchColors(highlighted: boolean) {
     if (highlighted && !theme.dark) {
       return theme.colors.primary
     }
-    return theme.colors.placeholder
+    return theme.colors.outline
   }, [highlighted, theme])
 
   return { backgroundColor, color }
@@ -202,7 +202,7 @@ export function useInputColors(highlighted: boolean) {
     if (highlighted && !theme.dark) {
       return theme.colors.primary
     }
-    return theme.colors.text
+    return theme.colors.scrim
   }, [highlighted, theme])
 
   return { backgroundColor, color }
