@@ -24,15 +24,6 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "outDir": "./build",
-    "rootDir": "."
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "src",
-    "storybook",
-    "babel.config.js"
-  ]
+    "outDir": "./build"
+  }
 }
